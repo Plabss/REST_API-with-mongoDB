@@ -19,7 +19,6 @@ app.get('/',(req,res)=>{
 //user router
 app.use('/api/users',userRouter);
 
-
 //invalid route error handling
 app.use((req,res,next)=>{
     res.status(404).json({
